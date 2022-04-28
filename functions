@@ -1,0 +1,68 @@
+#creating a function with no argument and no return value
+def name():
+    name=input("enter ur name ")
+    print("ur name is " , name)
+
+def phone_num():
+    num=int(input("enter ur number"))
+    print("ur number is " , num)
+
+name() #calling name function
+phone_num() #calling phone_num function'''
+
+'''------------------------------------------------------------------------------------------------------------------'''
+
+#function with parameter
+def mid_name(name):  #(name) is a argument
+    print("middle name is ",name)
+
+name=input("enter ur mid name ")
+mid_name(name) #passing parameter
+
+def number(num1,num2):    #2 arguments
+    print("ur number is ",num1,num2)
+
+num1=int(input("enter half of the middle phone number "))
+num2=int(input("enter half of the middle phone number "))
+number(num1,num2) #giving argument of number function
+
+
+'''------------------------------------------------------------------------------------------------------------------------'''
+#function with no argument with reeturn type
+def mark():   #no argumnet
+    mark1=int(input("enter sub 1 mark "))
+    mark2=int(input("enter sub 2 mark "))
+    tot=mark1+mark2
+    return tot  #with return type
+
+print("your total mark is ",mark())  # total mark is printing inside the print
+
+'''------------------------------------------------------------------------------------------------------------------------'''
+#with argument and no return type
+def pin_code(pin1,pin2):
+    print("pincode is ",pin1,pin2) #no return type
+
+pin1=int(input("enter pin 1 "))
+pin2=int(input("enter pin 2 "))
+pin_code(pin1,pin2) #giving argument
+
+'''-----------------------------------------------------------------------------------------------------------------------'''
+#with argument and return value
+def tot_fruit(f1,f2): # having argument
+    return f1+f2 #have return value
+
+
+f1=int(input("enter fruit 1 "))
+f2=int(input("enter fruit 2 "))
+print("total fruit is ",tot_fruit(f1,f2)) #passing argument
+
+'''------------------------------------------------------------------------------------------------------------------------'''
+
+#storing function to a variable with return type and argument
+def tot_people(t1,t2):
+    return t1+t2  #returning value
+
+t1=int(input("peoples stayed in house 1 "))
+t2=int(input("peoples stayed in house 2 "))
+max_people=tot_people(t1,t2)  #storing return type in a variable
+print("people stayed in both house is ",max_people) #output of the variable
